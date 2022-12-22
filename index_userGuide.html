@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title> </title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='유치원알리미'>
+	<meta name='Subject' content='유치원알리미 클론 코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공소, 유치원알리미'>
+	<meta name='Author' content='mihwa'>
+	<meta name='Publisher' content='mihwa'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 유치원알리미 클론 코딩입니다.'>
+	<meta name='Author-Date' content='2022/10/31'>
+	<meta name='Robots' content='index,follow'>
+
+	<link rel='stylesheet' href='css/reset.css'>
+	<link rel='stylesheet' href='css/styleU.css'>
+	<script src="./js/lib/jquery-1.12.4.min.js"></script>
+	<script src="./js/scriptU.js" defer></script>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+	.headerTag h4{
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		border: 0;
+		padding: 0;
+		margin: -1px;
+	}
+    </style>
+
+</head>
+<body>
+	<div id="userGuide">
+        <div class="guideTitle">
+            <h3>이용자 가이드</h3>
+            <a href="" onclick="self.close();" class="close">
+                <i class="line line1"></i>
+                <i class="line line2"></i>
+            </a>
+        </div>
+        <div class="guideTab">
+			<ul class="cf">
+				<li><a href="#tab1" class="active">통합검색</a></li>
+				<li><a href="#tab2">유치원·어린이집 조회</a></li>
+				<li><a href="#tab3">유치원·어린이집 비교</a></li>
+				<li><a href="#tab4">현 위치에서 찾기</a></li>
+			</ul>
+		</div>
+        <div class="tabContent tab-1 on" id="tab1">
+			<div class="thumb">
+				<img src="./img/main-autocompleteKndr.png" alt="통합검색">
+			</div>
+			<div class="content">
+				<p>간단한 키워드를 통한 자동완성기능</p>
+				<h4>지역명이나 유치원명을 활용한 간편검색</h4>
+				<ul>
+					<li>
+						유치원명 결과 : 키워드가 포함된 유치원·어린이집 리스트를 제공합니다.
+						<span class="comment">입력 예) ○ ○ 유치원</span>
+					</li>
+					<li>
+						주소명  : 해당 지역 유치원·어린이집의 정보를 바로 조회할 수 있습니다. 
+						<span class="comment"> 입력 예)○ ○시&nbsp;&nbsp;○ ○구 </span>
+					</li>
+					<li>
+						주소,유치원명 키워드 검색 : 키워드가 포함된 모든 유치원·어린이집 리스트를 제공합니다.
+						<span class="comment"> 입력 예)○ ○시&nbsp;&nbsp;○ ○구&nbsp;&nbsp;○ ○ 유치원</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div class="tabContent tab-2" id="tab2">
+			<div class="thumb">
+				<img src="./img/guide-combineFind.png" alt="유치원 어린이집 조회화면">
+			</div>
+			<div class="content">
+				<p>나에게 필요한 유치원을 찾고 싶다면</p>
+				<h4>한눈에 보이는 유형별 조건검색</h4>
+				<ul>
+					<li>
+						1. 원하는 지역을 선택할 수 있습니다. 
+						<span class="comment"> 입력 예) 시/도 : 대구광역시 시/군/구 : 동구</span>
+					</li>
+					<li>2. 유치원·어린이집명을 입력합니다.</li>
+					<li>3. 검색하기 버튼을 눌러 원하는 지역의 유치원·어린이집을 검색합니다.</li>
+				</ul>
+			</div>
+			<div class="thumb" style="margin-top: 30px;">
+				<img src="./img/guide-autocomplete1.png" alt="검색 결과">
+			</div>
+			<div class="content">
+				<p>선택과 결과를 한눈에</p>
+				<h4>유치원·어린이집 통합검색</h4>
+				<ul>
+					<li>
+						1. 기관, 설립유형, 제공서비스 등을 선택하고 선택한 조건으로 재검색 버튼을 클릭합니다.
+					</li>
+					<li>
+						2. 선택한 조건에 해당하는 유치원·어린이집 목록을 조회할 수 있습니다.
+					</li>
+					<li>
+						3. 체크박스에 체크하고 선택목록 비교를 눌러 선택한 유치원·어린이집을 비교할 수 있습니다.
+					</li>
+					<li>
+						4. 하트모양 클릭 시 해당 유치원·어린이집 즐겨찾기 및 비교 목록에 추가할 수 있습니다.
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div class="tabContent tab-3" id="tab3">
+			<div class="thumb">
+				<img src="./img/guide-compareSummary.png" alt="통합검색">
+			</div>
+			<div class="content">
+				<p>유치원·어린이집 조회에서</p>
+				<h4>즐겨찾기 추가하기</h4>
+				<ul>
+					<li>1. 검색결과의 유치원·어린이집을 선택하면 보여지는 목록에서 하트표 모양을 선택하면 즐겨찾는 유치원·어린이집으로 등록됩니다. </li>
+				</ul>
+			</div>
+			<div class="thumb" style="margin-top: 30px;">
+				<img src="./img/guide-compareList.png" alt="통합검색">
+			</div>
+			<div class="content">
+				<p>즐겨찾는 유치원·어린이집으로 등록하여</p>
+				<h4>유치원·어린이집 비교</h4>
+				<i>브라우져의 쿠키를 삭제하면 저장되었던 즐겨찾는 기관정보가 삭제됩니다.</i>
+				<ul>
+					<li>1. 즐겨찾기한 유치원·어린이집 목록을 보여주며 최대 10개까지 선택하여 비교 가능합니다. </li>
+					<li>2.즐겨찾는 리스트에 추가하고싶을때 조회,요약,비교,현위치에서 찾기 화면에서 하트표 모양으로 즐겨찾는 유치원·어린이집으로 등록이 가능합니다.</li>
+					<li>3. 유치원·어린이집을 비교하여 요약정보, 지도위치 등을 제공합니다. </li>
+				</ul>
+			</div>
+			<div class="thumb" style="margin-top: 30px;">
+				<img src="./img/guide-compare.png" alt="통합검색">
+			</div>
+			<div class="content"></div>
+		</div>
+        <div class="tabContent tab-4" id="tab4">
+			<div class="thumb">
+				<img src="./img/guide-kinderSearch.png" alt="통합검색">
+			</div>
+			<div class="content">
+				<p>내주변의 유치원·어린이집을 한 눈에</p>
+				<h4>현 위치에서 찾기</h4>
+				<ul>
+					<li>1. 내 주변의 유치원·어린이집을 지도에 표시합니다.</li>
+					<li>2. 주변기관 아이콘 및 검색목록 선택시 해당위치로 이동하고 유치원·어린이집 요약정보를 제공합니다.<span> 입력 예)○ ○시 ○ ○구 ○ ○ 유치원</span></li>
+					<li> 3. 지도위치 이동 시 주변 유치원·어린이집 목록을 제공합니다.</li>
+				</ul>
+			</div>
+			<div class="thumb" style="margin-top: 30px;">
+			<img src="./img/guide-kinderSearchAutocomplete.png" alt="통합검색"></div>
+			<div class="content">
+				<p>간단한 키워드를 통한 자동완성기능</p>
+				<h4>지역명이나 유치원·어린이집명을 활용한 간편검색</h4>
+				<ul>
+					<li>
+						유치원명 : 키워드가 포함된 유치원·어린이집 리스트 
+						<span> 입력 예) ○ ○ 유치원</span>
+					</li>
+					<li>
+						주소명 : 해당 지역 유치원·어린이집의 정보를 바로 조회할 수 있습니다.  
+						<span>  입력 예)○ ○시 ○ ○구 </span>
+					</li>
+					<li>
+						주소+유치원·어린이집명 검색 : 검색어에 해당되는 모든 유치원·어린이집 목록을 조회할 수 있습니다.  
+						<span>입력 예)○ ○시 ○ ○구 ○ ○ 유치원</span>
+					</li>
+					<li>
+						검색 시 해당 유치원·어린이집으로 지도위치 이동 및 주변 유치원·어린이집을 조회할 수 있습니다. 
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+
+
+	
+</body>
+</html>

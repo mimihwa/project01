@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+html{font-size: 87.5%;}
+body{font-family: "Noto Sans KR", sans-serif !important; line-height: 1; background: #eeeeee; color: #222; height: 100%; position: relative; letter-spacing: -0.04rem;}
+#userGuide{border: 20px solid #4f5b7b; background: #fff; min-height: 100%;}
+.guideTitle{background: #4f5b7b; padding-bottom: 20px; color: #fff; margin: -1px -1px 0;}
+.guideTitle h3{font-size: 1.6rem; font-weight: 500;}
+.guideTitle a.close{position: absolute; top: 0; right: 0; width: 60px; height: 60px;}
+.guideTitle a i{display: block; position: absolute; width: 50%; height: 1px; background: #fff; top: 50%; right: 15px;}
+.guideTitle a .line1{transform: rotate(45deg);}
+.guideTitle a .line2{transform: rotate(-45deg);}
+
+.guideTab{padding: 30px 30px 10px;}
+.guideTab ul li a{float: left; width: 25%; text-align: center; border: 1px solid #e7ecfd; border-right: none; border-bottom: 1px solid #5172df; display: block; line-height: 45px; font-size: 1rem;}
+.guideTab ul li:last-child a {border-right: 1px solid #e7ecfd;}
+.guideTab ul li a.active{border: 1px solid #5172df; border-bottom: 1px solid #fff;  font-weight: 500; color: #5172df;}
+
+.tabContent.on{display: block;}
+.tabContent{padding: 0 30px 30px; display: none;}
+.tabContent .thumb{border: 6px solid #e0e6f9; padding: 0; margin-top: 10px;}
+.tabContent .thumb img{width: 100%;}
+.tabContent .content{margin-top: 15px;}
+.tabContent .content p{font-size: 1.1rem; color: #1b3fb3; font-weight: 500; margin-bottom: 5px;
+ line-height: 1.8rem;}
+.tabContent .content h4{font-size: 1.5rem; color: #222; font-weight: 500; margin-bottom: 10px; line-height: 1.7rem;}
+.tabContent .content i{display: block; margin-bottom: 5px; font-style: normal;}
+.tabContent .content ul li{ background: url(../img/list-dd-comment.png) left 8px no-repeat; padding-left: 14px; line-height: 1.8rem;}
+.tabContent .content ul li span{display: block; color: #1d8de4; font-size: 1rem;}
+

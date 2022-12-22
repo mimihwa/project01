@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+   <title> </title>
+   <meta charset='utf-8'>
+   <meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+   <meta name='Title' content='유치원알리미'>
+   <meta name='Subject' content='유치원알리미 클론 코딩'>
+   <meta name='Keywords' content='html5, css3, 웹표준, 관공소, 유치원알리미'>
+   <meta name='Author' content='mihwa'>
+   <meta name='Publisher' content='mihwa'>
+   <meta name='Description' content='웹접근성, 웹표준을 준수한 유치원알리미 클론 코딩입니다.'>
+   <meta name='Author-Date' content='2022/10/31'>
+   <meta name='Robots' content='index,follow'>
+
+   <link rel='stylesheet' href='./css/reset.css'>
+   <link rel='stylesheet' href='./css/style4.css'>
+
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="./js/lib/jquery-1.12.4.min.js"></script>
+   <script src="./js/script4.js" defer></script>
+
+</head>
+<body>
+   <ul id="skip">
+      <li><a href="#header">헤더 바로가기</a></li>
+      <li><a href="#nav">메뉴 바로가기</a></li>
+      <li><a href="#content">내용 바로가기</a></li>
+   </ul>
+   
+   <!-- 헤더영역 -->
+   <header id="header">
+    <div class="header-top">
+        <div class="container">
+            <a href="javascript:;" onclick="openPop();" class="userguide">이용자 가이드</a>
+            <h1><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></h1>
+            <ul>
+                <li><a href="#">축소</a></li>
+                <li><span>100%</span></li>
+                <li><a href="#">확대</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu cf">
+        <div class="menu-bg"></div>
+        <div class="container">
+            <div class="menu-con">
+                <ul>
+                    <li><a href="./index1.html" title="유치원알리미">유치원알리미란</a>
+                        <ul>
+                            <li><a href="#" title="서비스 안내">서비스 안내</a></li>
+                            <li><a href="#" title="공시항목 소개">공시항목 소개</a></li>
+                            <li><a href="#" title="관련법령">관련법령</a></li>
+                            <li><a href="#" title="홍보자료">홍보자료</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index2.html">유치원&middot;어린이집 정보</a>
+                        <ul>
+                            <li><a href="#" title="유치원&middot;어린이집 조회">유치원&middot;어린이집 조회</a></li>
+                            <li><a href="#" title="유치원&middot;어린이집 비교">유치원&middot;어린이집 비교</a></li>
+                            <li><a href="#" title="현 위치에서 찾기">현 위치에서 찾기</a></li>
+                            <li><a href="#" title="정보공시지표">정보공시지표</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index3.html" title="알리미 소식">알리미 소식</a>
+                        <ul>
+                            <li><a href="#" title="공지사항">공지사항</a></li>
+                            <li><a href="#" title="자주 묻는 질문">자주 묻는 질문</a></li>
+                            <li><a href="#" title="오류 및 허위정보 신고">오류 및 허위정보 신고</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index4.html" title="자료실">자료실</a>
+                        <ul>
+                            <li><a href="#" title="자료실">자료실</a></li>
+                            <li><a href="#" title="공시자료 다운로드">공시자료 다운로드</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+   <!-- 본문영역 -->
+   <main id="main">
+      <div id="pageTitle">
+         <div class="container">
+               <h2>자료실</h2>
+               <p>유치원정보공시 참고자료를 제공합니다</p>
+         </div>
+      </div>
+      <div class="fixMenu">
+         <div class="container">
+            <ul class="cf">
+               <li><a href="#">자료실</a></li>
+               <li><a href="#">공시자료 다운로드</a></li>
+            </ul>
+         </div>
+       </div>
+      <div id="subPage" class="subPage subPage1">
+        <div class="container cf">
+            <div class="subHead cf">
+               <h3>자료실<a href="#"><img src="./img/btn-icon-print.png" alt=""></a></h3>
+               <div class="breadcrumb">
+                  <ul>
+                     <li><a href="#"><img src="./img/icon-breadcrumb-home.png" alt=""></a></li>
+                     <li><a href="#">자료실</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="subSch">
+                <div class="form">
+                    <div class="sch-local">
+                        <label for="select-local" class="select-local" role="button">전체</label>
+                        <ul class="option">
+                            <li><a href="javascript:;">전체</a></li>
+                            <li><a href="javascript:;">제목</a></li>
+                            <li><a href="javascript:;">작성자</a></li>
+                         </ul>
+                    </div>
+                    <div class="sch-bar">
+                        <input type="text" placeholder="검색어를 입력하세요" class="input-bar">
+                    </div>
+                </div>
+                <div class="btn cf">
+                  <a href="#" class="Btn btn-sch">검색하기</a>
+                </div>
+            </div>
+            <div class="resultArea">
+                <div class="resultHeader cf">
+                    <h4>검색목록 <i>27</i></h4> 
+                    <div class="countList">
+                        <a href="javascript:;" class="clickList" role="button">10개씩 보기</a>
+                        <ul class="selectBox">
+                            <li><a href="javascript:;">10개씩 보기</a></li>
+                            <li><a href="javascript:;">20개씩 보기</a></li>
+                            <li><a href="javascript:;">50개씩 보기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resultList">
+                    <table>
+                        <caption>자료실 목록을 날짜별로 정렬하였으며, 순번, 제목, 등록일, 작성자, 첨부파일 정보를 제공합니다.</caption>
+                        <colgroup>
+                              <col style="width:8%">
+                              <col style="width:47%">
+                              <col style="width:15%">
+                              <col style="width:15%">
+                              <col style="width:15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순번</th>
+                                <th>제목</th>
+                                <th>등록일</th>
+                                <th>작성자</th>
+                                <th>첨부파일</th>
+                            </tr>
+                        </thead>
+                        <tbody>		
+                            <tr>
+                                <td class="num">27</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('2747')" class="underline" style="color:#000;">유치원정보공시 공시항목별 세부 분류표</a></td>
+                                <td class="date"> 2022-09-07</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('1635', '2747' )"><img src="./img/icon-xlsx.png" alt="xlsx"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">26</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('2647')" class="underline" style="color:#000;">2022년 유치원 정보공시 입력지침</a></td>
+                                <td class="date"> 2022-03-11</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('1573', '2647' )"><img src="./img/icon-pdf.png" alt="pdf"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">25</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('2427')" class="underline" style="color:#000;">2021년 유치원 정보공시 입력지침</a></td>
+                                <td class="date"> 2021-03-15</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('1453', '2427' )"><img src="./img/icon-pdf.png" alt="pdf"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">24</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('2289')" class="underline" style="color:#000;">유치원알리미 홍보 카드뉴스</a></td>
+                                <td class="date"> 2020-11-09</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('1393', '2289' )"><img src="./img/icon-pdf.png" alt="pdf"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">23</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('2186')" class="underline" style="color:#000;">2020년 유치원 정보공시 입력지침</a></td>
+                                <td class="date"> 2020-07-16</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('1276', '2186' )"><img src="./img/icon-pdf.png" alt="pdf"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">22</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('1903')" class="underline" style="color:#000;">유치원알리미 리플렛</a></td>
+                                <td class="date"> 2019-12-02</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('1064', '1903' )"><img src="./img/icon-pdf.png" alt="pdf"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">21</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('1338')" class="underline" style="color:#000;">2017년 유치원 정보공시(유치원알리미) 운영 및 활용 사례집</a></td>
+                                <td class="date"> 2018-01-05</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('740', '1338' )"><img src="./img/icon-html.png" alt="html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">20</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('1318')" class="underline" style="color:#000;">2017년 하반기 RISS &amp; KOCW 유아교육 학술·강의 정보</a></td>
+                                <td class="date"> 2017-12-19</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('740', '1318' )"><img src="./img/icon-html.png" alt="html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">19</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('1118')" class="underline" style="color:#000;">2017년 상반기 RISS &amp; KOCW 유아교육 학술·강의 정보</a></td>
+                                <td class="date"> 2017-06-26</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('421', '1118' )"><img src="./img/icon-html.png" alt="html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">18</td>
+                                <td class="alignL title"><a href="javascript:fn_detail('800')" class="underline" style="color:#000;">2016년 10월 유치원 정보공시 입력지침 및 작성요령 Tip</a></td>
+                                <td class="date"> 2016-10-30</td>
+                                <td class="writer">keris</td>
+                                <td class="file">
+                                    <a href="javascript:fn_downloadFile('340', '800' )"><img src="./img/icon-pdf.png" alt="pdf"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging">
+                  <a href="javascript:;">1</a>&nbsp;
+                  <a href="javascript:;">2</a>&nbsp;
+                  <a href="javascript:;">3</a>&nbsp;
+               </div>
+            </div>
+        </div>
+      </div>
+   </main>
+   <!-- 바닥영역 -->
+   <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <ul class="cf">
+                <li><a href="javascript:;">오류 및 허위정보 신고</a></li>
+                <li><a href="javascript:;">OPEN API</a></li>
+                <li><a href="javascript:;">공시자료 다운로드</a></li>
+                <li><a href="javascript:;">저작권 정책</a></li>
+            </ul>
+            <div class="footerSelect cf">
+                <div class="footerBox box1" title="시도 교육청 사이트선택"  tabindex="1">시도교육청
+                    <ul class="siteEdu" >
+                        <li><a href="javascript:;">시도교육청</a></li>
+                        <li><a target="_blank" href="http://www.sen.go.kr">서울특별시교육청</a></li>
+                        <li><a target="_blank" href="http://www.pen.go.kr">부산광역시교육청</a></li>
+                        <li><a target="_blank" href="http://www.dge.go.kr">대구광역시교육청</a></li>
+                        <li><a target="_blank" href="http://www.ice.go.kr">인천광역시교육청</a></li>
+                        <li><a target="_blank" href="http://www.gen.go.kr">광주광역시교육청</a></li>
+                        <li><a target="_blank" href="http://www.dje.go.kr">대전광역시교육청</a></li>
+                        <li><a target="_blank" href="http://www.use.go.kr">울산광역시교육청</a></li>
+                        <li><a target="_blank" href="http://www.sje.go.kr">세종특별자치시교육청</a></li>
+                        <li><a target="_blank" href="http://www.goe.go.kr">경기도교육청</a></li>
+                        <li><a target="_blank" href="http://www.gwe.go.kr">강원도교육청</a></li>
+                        <li><a target="_blank" href="http://www.cbe.go.kr">충청북도교육청</a></li>
+                        <li><a target="_blank" href="http://www.cne.go.kr">충청남도교육청</a></li>
+                        <li><a target="_blank" href="http://www.jbe.go.kr">전라북도교육청</a></li>
+                        <li><a target="_blank" href="http://www.jne.go.kr">전라남도교육청</a></li>
+                        <li><a target="_blank" href="http://www.gbe.kr">경상북도교육청</a></li>
+                        <li><a target="_blank" href="http://www.gne.go.kr">경상남도교육청</a></li>
+                        <li><a target="_blank" href="http://www.jje.go.kr">제주특별자치도교육청</a></li>
+                    </ul>
+                </div>
+                <div class="footerBox box2" title="시도 유아교육진흥원 사이트선택" tabindex="1">시도 유아교육진흥원
+                    <ul class="siteKinderEdu">
+                        <li><a href="javascript:;">시도 유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://seoul-i.sen.go.kr">서울특별시교육청유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://child.pen.go.kr">부산광역시유아교육진흥원</a></li>
+                        <li><a target="_blank" href="https://childlike.pen.go.kr">부산유아교육체험원</a></li>
+                        <li><a target="_blank" href="http://www.dge.go.kr/daegu-i">대구광역시유아교육진흥원</a></li>
+                        <li><a target="_blank" href="https://child.ice.go.kr">인천광역시유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://iedu.gen.go.kr">광주광역시유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://dje-i.go.kr">대전광역시유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://www.uskids.kr">울산광역시유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://www.kench.or.kr">경기도유아체험교육원</a></li>
+                        <li><a target="_blank" href="http://gwch.gwe.go.kr">강원도유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://www.cbiedu.go.kr">충청북도유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://www.cn-i.go.kr">충청남도유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://www.jb-i.kr">전라북도유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://iedu.jne.kr">전라남도유아교육진흥원</a></li>
+                        <li><a target="_blank" href="http://gnchild.gne.go.kr">경상남도유아교육원</a></li>
+                        <li><a target="_blank" href="http://gnchild.gne.go.kr">경상남도유아교육원진주체험분원</a></li>
+                        <li><a target="_blank" href="http://gnchild.gne.go.kr">경상남도유아교육원김해체험분원</a></li>
+                        <li><a target="_blank" href="http://www.jjkids.go.kr">제주유아교육진흥원</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container cf">
+           <div class="link">
+              <i>유치원 상담센터:1544-0079 (2번&rarr;2번 선택)</i>
+              <i>어린이집 상담센터:1566-3232 (1)</i>
+              <address>41061 대구광역시 동구 동내로 64(동네동 119번지) 한국교육학술정보원</address>
+              <span>Email : e-csinfo@keris.or.kr</span>
+           </div>
+           <div class="logo">
+              <a target="_blank" href="http://www.moe.go.kr"><img src="./img/footer-logo1.png" alt="교육부 새창열림"></a>
+              <a target="_blank" href="http://www.keris.or.kr"><img src="./img/footer-logo2.png" alt="KERIS 새창열림"></a>
+              <a target="_blank" href="http://www.wa.or.kr"><img src="./img/footer-logo3.png" width="60px" height="40px" alt="웹접근성 우수사이트 인증 마크"></a>
+           </div>
+        </div>
+     </div>   
+</footer>
+</body>
+</html>
