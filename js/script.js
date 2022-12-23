@@ -4,6 +4,53 @@ function openPop(){
     window.open("./index_userGuide.html","",option);
     return false;
 };
+
+//확대/축소
+
+/* $(function (){
+  var fontSize = $('html').css("font-size");
+  var index = fontSize.replace("px","");
+  var ratio = $("#gnb .ratio span").html();
+  $("#gnb .minus a.btn").click(function(){
+    if(index == 14) return false;
+    index--;
+    $("html").css("font-size",index+"px");
+    ratio = Number(ratio) - 10;
+    $("#gnb .ratio span").html(ratio);
+  });
+  $("#gnb .plus a.btn").click(function(){
+    if(index == 16) return false;
+    index++;
+    $("html").css("font-size",index+"px");
+    ratio = Number(ratio) + 10;
+    $("#gnb .ratio span").html(ratio);
+  });
+}); */
+
+
+$('.zoom a').not().on('click',function(){
+  
+  let size=$('body').css("font-size");
+  let zNum=$('.zoom a').index(this);
+  let txt=$('.zoom span')
+    if(zNum==1){
+      $('body, h1, h2, h3, h4, h5, p').css("font-size",'+=.8');
+      $('img').not('.visual-bg1', '.localselect').css("width",'+=.8');
+      $('a').not('#skip a').css("font-size",'+=.8');
+      $('div').not('.visual-bg1, .localselect, .tab').css("background-size",'+=.6');
+      txt.text('110%');
+      return false
+    }else{
+      $('body, h1, h2, h3, h4, h5, p').css("font-size",'-=.8');
+      $('img').css("width",'-=.8');
+      $('a').not('#skip a').css("font-size",'-=.8');
+      $('div').not('.visual-bg1, .localselect, .tab').css("background-size",'-=.6');
+      txt.text('100%');
+    }
+
+    return false;
+});
+
             
 //검색bar
 function fn_onfocus(){
@@ -145,6 +192,34 @@ $(window).resize(function() {
     clearTimeout(id2);
     id2 = setTimeout(setThemeSlide, 500);
 });
+
+
+// content3(boardList)
+$('.boardList').each(function(){
+  let boardDiv=$(this);
+  let anchors=boardDiv.find('.menu li a');
+  let bADiv=boardDiv.find('.bA');
+  let lastAnchor;
+  let lastBA;
+
+  lastAnchor=anchors.filter('.on');
+  lastBA=$(lastAnchor.attr('href'));
+
+  anchors.click(function(e){
+      e.preventDefault();
+      let currentAnchor=$(this);
+      let currentBA=$(currentAnchor.attr('href'));
+      lastAnchor.removeClass('on');
+      currentAnchor.addClass('on');
+
+      lastBA.hide();
+      currentBA.show();
+
+      lastAnchor=currentAnchor;
+      lastBA=currentBA;
+  });
+});
+
 
 
 //하단 롤링배너(링크) 

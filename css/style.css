@@ -18,8 +18,7 @@ input{ border: none;  appearance: none; outline: none;}
 
 /* 헤더영역 */
 .header-top{width: 100%; height: 37px; padding: 20px 0; border-bottom: 1px solid #ddd; text-align: center; font-size:14px}
-.header-top .userguide{float: left; width: 83px; height: 18px; background: #e9525a url(../img/userguide.png) 10px 10px no-repeat; border: 1px solid #c33038; color: #fff; padding: 8px 10px 8px 30px; line-height: 1.2rem;}
-.header-top>a{font-size:.8rem; /* color: #fff; */}
+.header-top .userguide{float: left; width: 83px; height: 18px; background: #e9525a url(../img/userguide.png) 10px 10px no-repeat; border: 1px solid #c33038; color: #fff; padding: 8px 10px 8px 30px; line-height: 1.2rem; font-size: 14px;}
 .header-top h1{width: 130px; height: 35px; margin: 0 auto; vertical-align: middle; display: inline-block;} 
 .header-top h1 img{width: 100%;}
 .header-top ul{float: right;}
@@ -83,7 +82,7 @@ line-height: 36px; text-align: center;}
 .search-box .sub-box dl dd span{color: red;}
 .search-box .sub-box dl dd:nth-child(2) span{color: blue;}
 
-.con-visual .bg-search .favorite{float: right; padding: 14px 0 0 87px; width: 193px; height: 31px; position: relative; text-align: center; background: #08498d;  display: inline-block;}
+.con-visual .bg-search .favorite{float: right; padding: 12px 0 0 87px; width: 193px; height: 33px; position: relative; text-align: center; background: #08498d;  display: inline-block;}
 .favorite h3{position: absolute; top: 0; left: 0;}
 .favorite h3>img{padding: 11px 16px; background: #063465;}
 .favorite>a{width: 100%; color: #fff; padding: 0 5px 0 12px;}
@@ -94,10 +93,11 @@ line-height: 36px; text-align: center;}
 .bg-local .local-wrap .localselect{width: 335px; height: 280px; background: #1a3aa6 url(../img/map.PNG) right no-repeat ; padding: 35px 20px 35px 35px; float: left; position: relative; color: #fff;}
 .localselect h2{position: absolute; top: 35px; left: 35px;}
 .localselect p{position: absolute; top: 140px; left: 35px; font-size: 1em; line-height: 1.4em;}
-.localselect a{width: 66px; height: 16px; padding: 12px 20px; border: 1px solid #5f75c1; position: absolute; left: 35px; bottom: 35px; color: #fff;}
-.localselect a>img{vertical-align: middle; margin-right: 6px;}
+.localselect a{width: 66px; height: 16px; padding: 12px 20px; border: 1px solid #5f75c1; position: absolute; left: 35px; bottom: 35px; color: #fff; line-height: 1px; transition: .1s;} 
+.localselect a:hover{border: 1px solid #fff;}
+.localselect a>img{vertical-align: middle; margin-right: 7px;}
 .bg-local .local-wrap .status{width: 710px; height: 350px; overflow: hidden; float: right; position: relative;}
-.arrow{position: absolute; top: 191px; right: 278px; width: 25px; height: 25px; background: #edf1fe; border-radius: 50%; color: #5172df;}
+.arrow{position: absolute; top: 191px; right: 285px; width: 25px; height: 25px; background: #edf1fe; border-radius: 50%; color: #5172df;}
 .arrow .angle{position: absolute; top: 0; left: -3px; right: 0; bottom: 0; margin: auto; width: 6px; height: 6px; border: 1px solid; border-color: #5172df #5172df transparent transparent; transform: rotate(45deg);}
 .local-wrap .status .tab{width: 130px; height: 290px; padding: 30px 0; background: #edf1fe url(../img/bg-tab.png) no-repeat 6px 235px; display: inline-block;}
 .local-wrap .status .tab>ul>li{width: 130px; height: 45px; border-top: 1px solid #d5dceb; border-bottom: 1px solid #d5dceb;  line-height: 45px;}
@@ -189,19 +189,20 @@ line-height: 36px; text-align: center;}
 .boardList, .boardlink, .customer{float: left; height: 275px; margin-right: 20px;}
 .boardList, .customer {background: #fff; border: 1px solid #dfe3f3;}
 
-#content3 .boardList{width: 46%; box-sizing: border-box;}
+#content3 .boardList{width: 46%; box-sizing: border-box; height: 100%;}
 .boardList .menu{width: 100%; border-bottom: 1px solid #eff1f9; position: relative;}
-.boardList .menu>ul>li{float: left; padding: 0 15px; line-height: 50px;}
-.boardList .menu>ul>li>a{ font-size: 1.1em; color: #666; padding: 12px 5px; /* position: relative; */ }
-.boardList .menu>ul>li>a:focus{font-weight: 500; color: #000; border-bottom: 4px solid #5172df; }
+.boardList .menu>ul>li{float: left; padding: 0 15px; line-height: 50px; }
+.boardList .menu>ul>li>a{ font-size: 1.2em; color: #666; padding: 12px 5px; /* position: relative; */ border-bottom: 4px solid transparent; }
+.boardList .menu>ul>li>a.on{font-weight: 500; color: #000; border-bottom: 4px solid #5172df; }
 .boardList .menu .plusTag{text-align: center; position: absolute; top: 10px; right: 20px; width: 30px; height: 30px; background: #edf1fe;font-size: 30px; color: #5172df; line-height: 30px;}
 
-.boardList .boardArea{padding: 20px;}
-.boardList .boardArea ul{position: relative;}
-.boardList .boardArea ul li{ position: relative; padding: 10px 0 10px 10px; height: 16px;}
-.boardList .boardArea ul li:before{content: "·"; position: absolute; top: 10px; left: 0;}
-.boardList .boardArea ul li a{display: inline-block; width: calc(100% - 100px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #222; vertical-align: middle; font-size: 1.1em;}
-.boardList .boardArea ul li span{text-align: right; display: inline-block; width: 100px; font-size: 1em; font-weight: 200; color: #737272; vertical-align: middle; font-size: 1.1em;}
+.boardList .boardArea{position: relative; box-sizing: border-box; width: 100%; height: 221px;}
+.boardList .bA{position: absolute; width: 100%; height: 100%; padding: 20px; box-sizing: border-box; display: none;}
+.boardList .bA.on{display: block;}
+.boardList .bA ul li{padding: 10px 0 10px 10px; height: 16px; position: relative;}
+.boardList .bA ul li:after{content: "·"; position: absolute; top: 11px; left: -0; display: block;}
+.boardList .bA ul li a{display: inline-block; width: calc(100% - 100px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #222; vertical-align: middle; font-size: 1.1em;}
+.boardList .bA ul li span{text-align: right; display: inline-block; width: 100px; font-size: 1em; font-weight: 200; color: #737272; vertical-align: middle; font-size: 1.1em;}
 
 #content3 .boardlink{width: calc(53% - 260px);}
 .boardlink>a{padding: 25px; display: block; border: 1px solid #dfe3f3; height: 130px; box-sizing: border-box;}
